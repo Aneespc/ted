@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>login</h1>
+
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Username</label>
+    <div>
+    <input type="text" class="form-control" name="username" aria-describedby="emailHelp">
+    </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <div>
+    <input type="password" class="form-control" name="password">
+    </div>
+    </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

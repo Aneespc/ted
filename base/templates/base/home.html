@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<h1>Home Template</h1>
+
+<div>
+    <a href="/members/login_user">login</a>
+</div>
+
+<div>
+    <div>
+        {% for room in rooma %}
+        <div>
+            <h5>{{room.id}} is <a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
+        </div>
+        {% endfor %}
+    </div>
+        
+</div>
+
+{% endblock content %}
